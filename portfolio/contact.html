@@ -4,27 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contactme</title>
-  <link rel ="stylesheet" href = "CSS/Contact.css">
+  <link rel="stylesheet" href="CSS/Contact1.css">
 </head>
 <body>
 
-  <h1>Contact Me </h1>
-  <form method="GET">
+  <h1>Contact Information 
+  </h1>
+  <h2>Md.Kamrul Hassan Rabby </h2>
+  <h3>Road no :8,Block : c,Basundhara Residential Area</h3>
 
-    First Name: <input type="text" name="firstname" required><br>
-    Last Name: <input type="text" name="lastname" required><br>
-    Email: <input type="email" name="email" required><br>
-    Company: <input type="text" name="company"><br>
+  <form method="GET" >
 
-    Reason for Contact:<br>
-    <input type="radio" name="Reason" value="Project">Project<br>
-    <input type="radio" name="Reason" value="Thesis">Thesis<br>
-    <input type="radio" name="Reason" value="Job">Job<br>
-    Service provided:<br>
-    <input type="checkbox" name="service" value="Project Guide">Project Guide (Java, Python, HTML/CSS, PHP)<br>
-    <input type="checkbox" name="service" value="ML/AI">Machine learning, AI, Data Science Paper submission guide<br>
-    <input type="checkbox" name="service" value="Internship">Internship At Tech.Group<br>
-    <input type="submit" value="Register"> <input type="reset" value="Full Reset">
+    <div class="row"> <label>First Name:</label>
+      <input type="text" name="firstname" required>
+    </div>
+
+    <div class="row">
+      <label>Last Name:</label>
+      <input type="text" name="lastname" required>
+    </div>
+
+    <div class="row">
+      <label>Email:</label>
+      <input type="email" name="email" required>
+    </div>
+
+    <div class="row">
+      <label>Phone:</label>
+      <input type="text" name="phone">
+    </div>
+
+    <div class="row">
+      <label>Company:</label>
+      <input type="text" name="company">
+    </div>
+
+    <div class="row">
+      <label>Preferred Date:(dd/mm/yyyy)</label>
+      <input type="date" name="contactdate">
+    </div>
+
+   <h2> Reason for Contact:
+<select name="Reason" > 
+  <option value="Project">Project</option>
+  <option value="Thesis">Thesis</option>
+  <option value="Job">Job</option>
+  <option value="Consultation">Consultation</option>
+  <option value="Support">Support</option>
+</select></h2>
+<br>
+
+    <h3>Services Required:</h3>
+    <input type="checkbox" name="service" value="Project Guide">Project Guide<br>
+    <input type="checkbox" name="service" value="ML/AI">Machine Learning / AI<br>
+    <input type="checkbox" name="service" value="Internship">Internship<br>
+    <input type="checkbox" name="service" value="Portfolio Build">Portfolio Building<br>
+    <input type="checkbox" name="service" value="Code Review">Code Review<br>
+
+    <h3>Additional Message:</h3>
+    <textarea name="message" rows="4"></textarea><br>
+
+    <h3>Additional Information</h3>
+
+    <div class="row">
+      <label>Contact Method:</label>
+      <select name="contactmethod">
+        <option value="Email">Email</option>
+        <option value="Phone">Phone</option>
+        <option value="WhatsApp">WhatsApp</option>
+        <option value="Telegram">Telegram</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>Budget:</label>
+      <input type="text" name="budget" placeholder="Example ">
+    </div>
+
+    <div class="row">
+      <label>File Link:</label>
+      <input type="text" name="filelink">
+    </div>
+
+    <div class="row">
+      <label>Country:</label>
+      <input type="text" name="country">
+    </div>
+
+    <div class="row">
+      <label>Deadline:</label>
+      <input type="date" name="deadline">
+    </div>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Full Reset">
+
   </form>
+
 </body>
 </html>
